@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>סקר הביקורת הפנימית</title>
+    <style>
+        /* עיצוב כללי */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            direction: rtl; /* לתמוך בכיוון ימין לשמאל */
+            color: #6a1b9a; /* צבע סגול לכותרת ולגוף הטקסט */
+        }
+
+        /* סגנון כותרת */
+        h1 {
+            text-align: center;
+            color: #6a1b9a; /* צבע סגול לכותרת */
+            margin-top: 20px;
+            font-size: 28px;
+        }
+
+        /* עיצוב לאזור הכותרת עם הלוגו */
+        .header {
+            text-align: right; /* הלוגו יהיה בצד ימין */
+            margin-bottom: 30px;
+            padding-right: 20px; /* רווח קטן לימין */
+        }
+
+        .header img {
+            max-width: 1000px; /* הקטנת גודל הלוגו */
+            height: auto;
+            margin-bottom: 50px;
+        }
+
+        /* עיצוב iframe */
+        .report-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 20px;
+        }
+
+        iframe {
+            width: 70%; /* הקטנת הרוחב של ה-iframe */
+            height: 850px; /* הגדלת הגובה של ה-iframe */
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- אזור כותרת עם הלוגו -->
+    <div class="header">
+        <img src="https://www.grantthornton.co.il/globalassets/1.-member-firms/israel/logo/--3/gt_isr_logo_393x43-002_new.png" alt="לוגו פאן קנה">
+        <h1>סקר הביקורת הפנימית</h1>
+    </div>
+
+    <!-- אזור הצגת הדוח -->
+    <div class="report-container">
+        <iframe src="https://app.powerbi.com/reportEmbed?reportId=1482cb2d-19a0-468a-b88b-0134e9a987cb&autoAuth=true&ctid=c17309ef-714d-49a5-8a3e-f9cda14a31a3" frameborder="0" allowFullScreen="true"></iframe>
+    </div>
+</body>
+</html>
